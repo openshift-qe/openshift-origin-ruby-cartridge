@@ -47,7 +47,7 @@ function start() {
     [ "$?" == "0" ] && wait_for_pid_file $HTTPD_PID_FILE
 }
 
-functio;n stop() {
+function stop() {
     if ruby_in_development_mode; then
       if httpd_in_development_mode; then
         echo "Ruby cartridge in development mode, skipping stop..."
